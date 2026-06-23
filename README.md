@@ -8,6 +8,8 @@ images, volumes, networks, and Compose projects from a clean native UI.
 > [sshpilot](https://github.com/mfat/sshpilot). Built so **remote (SSH) hosts** can
 > be added later without touching the UI — see *Adding remote hosts* below.
 
+![Docker Console — Containers](screenshots/containers.png)
+
 ## Features
 
 - **Containers** — list (with health), start/stop/restart/pause/kill/remove, search,
