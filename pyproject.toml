@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docker-console"
+version = "0.1.0"
+description = "Local-first Docker/Podman manager (GTK4/Adwaita)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "GPL-3.0-or-later" }
+authors = [{ name = "Mehdi" }]
+dependencies = ["PyGObject"]
+classifiers = [
+    "Environment :: X11 Applications :: GTK",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Systems Administration",
+]
+
+# Runtime also needs system GObject-introspection libraries (not pip-installable):
+#   GTK 4, libadwaita >= 1.4, Vte 3.91. See README.
+
+[project.urls]
+Homepage = "https://github.com/mfat/docker-console"
+Issues = "https://github.com/mfat/docker-console/issues"
+
+[project.scripts]
+docker-console = "docker_console.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["docker_console*"]
+
+[tool.setuptools.package-data]
+"docker_console" = ["resources/icons/*.svg"]

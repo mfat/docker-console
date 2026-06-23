@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.mfat.dockerconsole</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Docker Console</name>
+  <summary>Local-first Docker/Podman manager</summary>
+  <description>
+    <p>
+      Docker Console is a native GTK4/Adwaita manager for the Docker or Podman
+      daemon on your machine. Manage containers, images, volumes, networks and
+      Compose projects: start/stop/restart, inspect, create containers, follow
+      logs, open an interactive shell, watch live stats, and prune unused data.
+    </p>
+  </description>
+  <launchable type="desktop-id">io.github.mfat.dockerconsole.desktop</launchable>
+  <url type="homepage">https://github.com/mfat/docker-console</url>
+  <url type="bugtracker">https://github.com/mfat/docker-console/issues</url>
+  <developer id="io.github.mfat">
+    <name>Mehdi</name>
+  </developer>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="0.1.0" date="2026-06-23">
+      <description>
+        <p>Initial standalone release: local Docker/Podman management.</p>
+      </description>
+    </release>
+  </releases>
+</component>

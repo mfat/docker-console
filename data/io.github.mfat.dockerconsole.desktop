@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Docker Console
+GenericName=Container Manager
+Comment=Manage Docker/Podman containers, images, volumes and Compose projects
+Exec=docker-console
+Icon=io.github.mfat.dockerconsole
+Terminal=false
+Categories=Development;System;Utility;
+Keywords=docker;podman;container;compose;
+StartupNotify=true
